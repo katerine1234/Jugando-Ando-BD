@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Estilos de Bootstrap y jQuery con protocolo https -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="newcss3.css" type="text/css">
+
+        <title>Jugando Ando - Registro</title>
+    </head>
+
+    <body>
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-3 register-left">
+                    <!-- Actualizado la URL de la imagen -->
+                    <img src="https://i.pinimg.com/originals/39/b8/9d/39b89d1f7f9de95cb4df4692bb390742.jpg" alt="Niño" />
+                    <h3>Bienvenidos</h3>
+                    <p>Registrate en 5 minutos y conoce nuestra idea para ayudar a nuestros niños menos favorecidos</p>
+                    <button type="button" class="btn btn-primary"><a href="index.jsp">Login</a></button>
+                </div>
+
+                <div class="col-md-9 register-right">
+                    <!-- Incluido la etiqueta <form> -->
+                    <form action="ingresarRegistrarse.jsp" method="post" accept-charset="UTF-8">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">JUGANDO ANDO</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder=" Nombres *" name="nombres" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder=" Apellidos" name="apellidos" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Contraseña *" name="contrasena" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirmar Contraseña *" name="verificarContrasena" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Correo Electrónico *" name="correo" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="telefono" class="form-control" placeholder="Teléfono *" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Usuario *" name="usuario" required>
+                                        </div>
+                                        <button type="submit" class="btn btnRegister">Registrarse</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
